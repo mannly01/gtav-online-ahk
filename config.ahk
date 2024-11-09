@@ -9,6 +9,7 @@ CEOBuzzardKey        := "^F3" ; Spawn free CEO buzzard.
 RequestSparrowKey    := "F3" ; Call in your Sparrow (or whatever you last requested moon pool vehicle was).
 ReturnSparrowKey     := "+F3" ; Return your Sparrow to the Kosatka.
 RequestKosatkaKey    := "F4" ; Call in your Kosatka Submarine.
+RequestOppressorKey  := "+F4" ; Call in your Oppressor Mk II.
 
 ForceDisconnectKey   := "F12" ; Force disconnect by suspending process for 10s, requires pssuspend.exe.
 KillGameKey          := "+F12" ; Kill game process, requires pskill.exe.

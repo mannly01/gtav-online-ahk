@@ -50,6 +50,7 @@ CEOBuzzardKey        := "F24" ; Spawn free CEO buzzard.
 RequestSparrowKey    := "F24" ; Call in your Sparrow (or whatever you last requested moon pool vehicle was).
 ReturnSparrowKey     := "F24" ; Return your Sparrow to the Kosatka.
 RequestKosatkaKey    := "F24" ; Call in your Kosatka Submarine.
+RequestOppressorKey  := "F24" ; Call in your Oppressor Mk II.
 ForceDisconnectKey   := "F24" ; Force disconnect by suspending process for 10s, requires pssuspend.exe.
 KillGameKey          := "F24" ; Kill game process, requires pskill.exe.
 
@@ -215,6 +216,7 @@ Hotkey, %CEOBuzzardKey%, CEOBuzzard
 Hotkey, %RequestSparrowKey%, RequestSparrow
 Hotkey, %ReturnSparrowKey%, ReturnSparrow
 Hotkey, %RequestKosatkaKey%, RequestKosatka
+Hotkey, %RequestOppressorKey%, RequestOppressor
 
 Hotkey, %ForceDisconnectKey%, ForceDisconnect
 Hotkey, %KillGameKey%, KillGame
@@ -556,9 +558,9 @@ ForceDisconnect:
     IfMsgBox, Timeout
       Return
   }
-  Run, pssuspend gta5.exe ,,Hide
+  Run, pssuspend64 gta5.exe ,,Hide
   splashCountdown("ForceDisconnect", "Hang on tight (%i)", IntDisconnectDelay, true)
-  Run, pssuspend -r gta5.exe ,,Hide
+  Run, pssuspend64 -r gta5.exe ,,Hide
   Sleep 1000
   SplashTextOff
   bringGameIntoFocus()
@@ -574,7 +576,7 @@ KillGame:
     IfMsgBox, Timeout
       Return
   }
-  Run, pskill gta5.exe ,,Hide
+  Run, pskill64 gta5.exe ,,Hide
   return
 
 ; Toggle AFK (move left/right in a loop to not get kicked)
@@ -761,7 +763,7 @@ ToggleAutoPlane:
   autoHeliToggle := ( autoHeliToggle ? 0 : 1 )
   if (autoHeliToggle) {
     SetTimer, AutoPlane, 50
-    SetTimer, AutoPlaneElevator, 5000
+    SetTimer, AutoPlaneElevator, 2500
     SoundPlay, %A_WinDir%\Media\Windows Battery Critical.wav
   } else {
     SoundPlay, %A_WinDir%\Media\Windows Balloon.wav
@@ -908,6 +910,15 @@ RequestKosatka:
   Send {%IGB_Up% 2}{%IGB_Enter%}
   ; Call Kosatka
   Send {%IGB_Enter%}
+  return
+
+; Call in your Oppressor Mk II
+RequestOppressor:
+  openServiceVehicleMenu(IsInBuilding)
+  ; Open TerrorByte Menu
+  Send {%IGB_Up% 3}{%IGB_Enter%}
+  ; Call Oppressor Mk II
+  Send {%IGB_Down% 2}{%IGB_Enter%}{%IGB_Interaction%}
   return
 
 ; Join a New Public Session
