@@ -1,4 +1,4 @@
-; v2.0.0
+; v2.1.0
 ; ^ don't remove or alter this line (autoupdate)
 #MaxThreadsPerHotkey 2
 
