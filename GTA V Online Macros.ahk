@@ -1,4 +1,4 @@
-; v2.1.0
+; v2.1.1
 ; ^ don't remove or alter this line (autoupdate)
 #MaxThreadsPerHotkey 2
 
@@ -558,9 +558,9 @@ ForceDisconnect:
     IfMsgBox, Timeout
       Return
   }
-  Run, pssuspend64 gta5.exe ,,Hide
+  Run, pssuspend gta5.exe ,,Hide
   splashCountdown("ForceDisconnect", "Hang on tight (%i)", IntDisconnectDelay, true)
-  Run, pssuspend64 -r gta5.exe ,,Hide
+  Run, pssuspend -r gta5.exe ,,Hide
   Sleep 1000
   SplashTextOff
   bringGameIntoFocus()
@@ -576,7 +576,7 @@ KillGame:
     IfMsgBox, Timeout
       Return
   }
-  Run, pskill64 gta5.exe ,,Hide
+  Run, pskill gta5.exe ,,Hide
   return
 
 ; Toggle AFK (move left/right in a loop to not get kicked)

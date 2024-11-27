@@ -9,8 +9,8 @@ Provides hotkeys for many parts of the Interaction and Settings menus.
 
 ## Installation
   * Download the .ahk files
-  * Open it in a text editor (e.g. notepad++ with AutoIT syntax highlighting)
-  * Change the hotkeys ([key list](https://www.autohotkey.com/docs/KeyList.htm)) and other options as you desire in the config.ahk.
+  * Open config.ahk in a text editor (e.g. notepad++ with AutoIT syntax highlighting)
+  * Change the hotkeys ([key list](https://www.autohotkey.com/docs/KeyList.htm)) and other options as you desire.
 
 ## Optional Installation (pssuspend.exe / pskill.exe)
 pssuspend.exe and pskill.exe are tools from the sysinternals collection. You can download the whole package (~3MB) [directly from Microsoft](https://docs.microsoft.com/en-us/sysinternals/downloads/pssuspend).
@@ -25,11 +25,11 @@ You can copy them all but we only need pssuspend and pskill, so go ahead and ext
 * Start GTA V before starting this script.
 * On Windows 10/11 you have to start the `GTA V Online Macros.ahk` script as administrator (Right-click -> Run as administator).
 * You should run the game in window(ed fullscreen) or some functions will switch windows and not work properly.
-* You will have to toggle In Building mode manually since the interaction menu will be changed and most functions need to be aware of that. When you go into a building, toggle this setting for the functions to work correctly. If you start in a building, toggle In Building mode before using any of the functions. As a quick reference, if the Interaction Menu has 11 options, In Building should be deactivated; if it has 12, activate it.
+* You will have to toggle In Building mode (*) manually since the interaction menu will be changed and most functions need to be aware of that. When you go into a building, toggle this setting for the functions to work correctly. If you start in a building, toggle In Building mode before using any of the functions. As a quick reference, if the Interaction Menu has 11 options, In Building should be deactivated; if it has 12, activate it. This also needs to be toggled for some missions (i.e. Auto Shop Contracts).
 * The interaction menu is often delayed the first time it's opened after loading screens or cutscenes.
-  Make sure to briefly open the interaction menu from time to time, especially after loading/cutscenes.
+  Make sure to briefly open the interaction menu (m) from time to time, especially after loading/cutscenes.
   Alternatively you can increase the IntMenuDelay setting for more accuracy but making the process slower in general.
-* If you start the game as CEO/President, you need to use the ResignOrDisband key and then become CEO/President again for the CEO/President functions to work correctly the first time.
+* If you start the game as CEO/President, you need to use the ResignOrDisband key (F9) and then become CEO/President again for the CEO/President functions to work correctly the first time.
 * Needless to say, don't give inputs while a macro is running.
 * Sometimes you might find that the script doesn't appear to do anything. This might happen if you start the game after the AHK script. Reloading the script (Right-click on AHK systray icon -> Reload Script) fixes that usually.
 
@@ -76,10 +76,10 @@ You can disable the automatic check and/or bind a manual check to a hotkey in th
 Note that the update check hotkey still only works when GTA is active.
 
 ## Will I get banned?
-I'm not aware of any bans issued by Rockstar following the usage of AHK-scripts. I ahve personally used AHK-scripts within GTA:O since 2014 and did not get banned. This is also not the only AHK-script available, I'm sure many are using them. At the end, it's your call but I'm 99% certain that it won't get you banned.
+I'm not aware of any bans issued by Rockstar following the usage of AHK-scripts. I have personally used AHK-scripts within GTA:O since 2014 and did not get banned. This is also not the only AHK-script available, I'm sure many are using them. At the end, it's your call but I'm 99% certain that it won't get you banned.
 
 ## Available macros
-I might forget to update so just check available keybinds :)
+I might forget to update so just check available keybinds in config.ahk :)
 
 * **SnackMenu** – Opens the snack menu
 * **AutoHealth** – Consumes 2 snacks (from position 2) and closes menu
