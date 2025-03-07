@@ -1,8 +1,8 @@
-; v2.2.0
+; v2.2.1
 ; ^ don't remove or alter this line (autoupdate)
 #MaxThreadsPerHotkey 2
 
-; GTA V: Online Enhanced AHK-Macros v2.2.0 by mannly01
+; GTA V: Online Enhanced AHK-Macros v2.2.1 by mannly01
 ; based on/inspired by GTA V Useful Macros v4.21 by twentyafterfour
 ; based on/inspired by GTA V Online Macros v1.3.1 by 2called-chaos
 ; https://github.com/2called-chaos/gtav-online-ahk
@@ -501,9 +501,9 @@ bringGameIntoFocus(applyDelay = false) {
 ; === UPDATE ===
 ; ==============
 performUpdateCheck(silentSuccess = false) {
-  URLDownloadToFile,https://raw.githubusercontent.com/mannly01/gtav-online-ahk/master/GTA`%20V`%20Online`%20Macros.ahk,update.txt
+  URLDownloadToFile,https://raw.githubusercontent.com/mannly01/gtav-online-ahk/refs/heads/master/GTAO%20Enhanced%20Macros.ahk,update.txt
   if (errorlevel) {
-    msgbox, 0, Error - GTA V Online AHK-Macros, Received error response from GitHub and update check was canceled.`nPlease retry later or check manually.`n`nHint: Set DoCheckForUpdates to false to disable automatic checking!
+    msgbox, 0, Error - GTAO Enhanced AHK-Macros, Received error response from GitHub and update check was canceled.`nPlease retry later or check manually.`n`nHint: Set DoCheckForUpdates to false to disable automatic checking!
     FileDelete, update.txt
     return
   }
@@ -517,12 +517,12 @@ performUpdateCheck(silentSuccess = false) {
     if (!silentSuccess)
       msgbox, You are running the latest version!`n`n%update%`n`nIf something doesn't work please let me know!`n`nhttps://github.com/2called-chaos/gtav-online-ahk/issues/
   } else if (VerCompare(update, currentVersion) = 1) {
-    MsgBox, 4, Update available! - GTA V Online AHK-Macros, A new version of GTA V Online AHK-Macros has been released!`n`n%currentVersion% <-- your version`n%update% <-- available update`n`nWould you like to update?`n`nWarning: If you don't use config.ahk this might reset all your settings!
+    MsgBox, 4, Update available! - GTAO Enhanced AHK-Macros, A new version of GTAO Enhanced AHK-Macros has been released!`n`n%currentVersion% <-- your version`n%update% <-- available update`n`nWould you like to update?`n`nWarning: If you don't use config.ahk this might reset all your settings!
     IfMsgBox Yes
     {
       FileCopy, update.txt, %A_ScriptName%, 1
       FileDelete, update.txt
-      msgbox, 0, Update successful! - GTA V Online AHK-Macros, Update successful, the script will now reload!`n`nHint: Check for new stuff `;)
+      msgbox, 0, Update successful! - GTAO Enhanced AHK-Macros, Update successful, the script will now reload!`n`nHint: Check for new stuff `;)
       Reload
     }
     IfMsgBox No
@@ -534,7 +534,7 @@ performUpdateCheck(silentSuccess = false) {
     msgbox, This script will NOT be updated!`n`n%currentVersion% <-- your version`n%update% <-- available update
     FileDelete, update.txt
   } else {
-    msgbox, 0, Error - GTA V Online AHK-Macros, Received invalid response from GitHub and update check was canceled.`nPlease retry later or check manually.`n`nHint: Set DoCheckForUpdates to false to disable automatic checking!
+    msgbox, 0, Error - GTAO Enhanced AHK-Macros, Received invalid response from GitHub and update check was canceled.`nPlease retry later or check manually.`n`nHint: Set DoCheckForUpdates to false to disable automatic checking!
     FileDelete, update.txt
   }
 }

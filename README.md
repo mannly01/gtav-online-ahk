@@ -25,8 +25,7 @@ You can copy them all but we only need pssuspend and pskill, so go ahead and ext
 
 ## Usage
 * Start GTA V before starting this script.
-**NOTE:** Make sure to use the `GTAO Enhanced Macros.ahk` if you have the new Enhanced version.
-* On Windows 10/11, you have to start the `GTA V Online Macros.ahk` script as administrator (Right-click -> Run as administator).
+* On Windows 10/11, you have to start the `GTA V Online Macros.ahk` script as administrator (Right-click -> Run as administator). **NOTE:** Make sure to use the `GTAO Enhanced Macros.ahk` if you have the new Enhanced version.
 * You should run the game in window(ed fullscreen) or some functions will switch windows and not work properly.
 * You will have to toggle 'In Building' mode (*) manually since the interaction menu will be changed and most functions need to be aware of that. When you go into a building, toggle this setting for the functions to work correctly. If you start in a building, toggle 'In Building' mode before using any of the functions. As a quick reference, if the Interaction Menu has 11 options, 'In Building' should be deactivated; if it has 12, activate it. This also needs to be toggled for some missions (i.e. Auto Shop Contracts).
 * The interaction menu is often delayed the first time it's opened after loading screens or cutscenes.
