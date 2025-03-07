@@ -2,6 +2,7 @@
 Provides hotkeys for many parts of the Interaction and Settings menus.
 
 **GTAO 1.69 NOTE**: This is a nearly complete re-write of 2called-chaos' [script](https://github.com/2called-chaos/gtav-online-ahk) for GTA Online v1.69 (Bottom Dollar Bounties DLC).
+
 **GTAO ENHANCED 1.70 NOTE**: The files and some menus have changed for GTA V Enhanced and this script will not work. I have created a new `GTAO Enhanced Macros.ahk` script that must be used instead. This script is now for the **LEGACY** version.
 
 ## Requirements
@@ -9,8 +10,8 @@ Provides hotkeys for many parts of the Interaction and Settings menus.
   * [pssuspend.exe and pskill.exe](https://docs.microsoft.com/en-us/sysinternals/downloads/pssuspend) in your path (for force disconnect and process killing, see instructions below). This is only required for the Force Disconnect and Kill Game keys.
 
 ## Installation
-  * Download the .ahk files (GTA V Online Macros.ahk **OR** GTAO Enhanced Macros.ahk)
-  * Open config.ahk in a text editor (e.g. notepad++ with AutoIT syntax highlighting)
+  * Download the .ahk files (`GTA V Online Macros.ahk` **OR** `GTAO Enhanced Macros.ahk`)
+  * Open `config.ahk` in a text editor (e.g. notepad++ with AutoIT syntax highlighting)
   * Change the hotkeys ([key list](https://www.autohotkey.com/docs/KeyList.htm)) and other options as you desire.
 
 ## Optional Installation (pssuspend.exe / pskill.exe)
@@ -24,10 +25,10 @@ You can copy them all but we only need pssuspend and pskill, so go ahead and ext
 
 ## Usage
 * Start GTA V before starting this script.
-* **NOTE:** Make sure to use the `GTAO Enhanced Macros.ahk` if you have the new Enhanced version.
-* On Windows 10/11 you have to start the `GTA V Online Macros.ahk` script as administrator (Right-click -> Run as administator).
+**NOTE:** Make sure to use the `GTAO Enhanced Macros.ahk` if you have the new Enhanced version.
+* On Windows 10/11, you have to start the `GTA V Online Macros.ahk` script as administrator (Right-click -> Run as administator).
 * You should run the game in window(ed fullscreen) or some functions will switch windows and not work properly.
-* You will have to toggle In Building mode (*) manually since the interaction menu will be changed and most functions need to be aware of that. When you go into a building, toggle this setting for the functions to work correctly. If you start in a building, toggle In Building mode before using any of the functions. As a quick reference, if the Interaction Menu has 11 options, In Building should be deactivated; if it has 12, activate it. This also needs to be toggled for some missions (i.e. Auto Shop Contracts).
+* You will have to toggle 'In Building' mode (*) manually since the interaction menu will be changed and most functions need to be aware of that. When you go into a building, toggle this setting for the functions to work correctly. If you start in a building, toggle 'In Building' mode before using any of the functions. As a quick reference, if the Interaction Menu has 11 options, 'In Building' should be deactivated; if it has 12, activate it. This also needs to be toggled for some missions (i.e. Auto Shop Contracts).
 * The interaction menu is often delayed the first time it's opened after loading screens or cutscenes.
   Make sure to briefly open the interaction menu (m) from time to time, especially after loading/cutscenes.
   Alternatively you can increase the IntMenuDelay setting for more accuracy but making the process slower in general.
@@ -35,7 +36,7 @@ You can copy them all but we only need pssuspend and pskill, so go ahead and ext
 * Needless to say, don't give inputs while a macro is running.
 * Sometimes you might find that the script doesn't appear to do anything. This might happen if you start the game after the AHK script. Reloading the script (Right-click on AHK systray icon -> Reload Script) fixes that usually.
 
-## Changelog (2.1.3)
+## Changelog (2.1.3/2.2.0)
 * Created a new `GTAO Enhanced Macros.ahk` for the 1.70 Enhanced version. The `GTA V Online Macros.ahk` file will still be available for the **Legacy** version.
 
 ## Custom additions
