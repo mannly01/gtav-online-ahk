@@ -620,7 +620,7 @@ ToggleRadar:
   ; Necessary delay to allow pause menu to open properly
   Sleep, IntPhoneMenuDelay
   ; Not using IGB_ variables on purpose as pause menu has static bindings
-  Send {Right 5}
+  Send {Right 6}
   Sleep IntPhoneMenuDelay
   Send {Enter} ; Settings Menu
   Sleep IntPhoneMenuDelay
@@ -842,7 +842,7 @@ RetrieveCar:
 ; Return your currently active vehicle
 ReturnCar:
   openManageVehicleMenu(IsInBuilding)
-  Send {%IGB_Up% 2}{%IGB_Enter%}{%IGB_Interaction%}
+  Send {%IGB_Up% 3}{%IGB_Enter%}{%IGB_Interaction%}
   return
 
 ; Chooses on-call random heist from phone options
@@ -933,7 +933,7 @@ NewPublicSession:
   Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
   Sleep IntPhoneMenuDelay2 * 2
-  Send {Up 4}
+  Send {Up 5}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
   Sleep IntPhoneMenuDelay2
@@ -954,7 +954,7 @@ NewInviteSession:
   Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
   Sleep IntPhoneMenuDelay2 * 2
-  Send {Up 4}
+  Send {Up 5}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
   Sleep IntPhoneMenuDelay2
@@ -977,7 +977,7 @@ NewCrewSession:
   Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
   Sleep IntPhoneMenuDelay2 * 2
-  Send {Up 4}
+  Send {Up 5}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
   Sleep IntPhoneMenuDelay2
@@ -1000,7 +1000,7 @@ NewFriendSession:
   Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
   Sleep IntPhoneMenuDelay2 * 2
-  Send {Up 4}
+  Send {Up 5}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
   Sleep IntPhoneMenuDelay2
