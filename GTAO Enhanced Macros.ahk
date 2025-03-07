@@ -558,9 +558,9 @@ ForceDisconnect:
     IfMsgBox, Timeout
       Return
   }
-  Run, pssuspend gta5.exe ,,Hide
+  Run, pssuspend GTA5_Enhanced.exe ,,Hide
   splashCountdown("ForceDisconnect", "Hang on tight (%i)", IntDisconnectDelay, true)
-  Run, pssuspend -r gta5.exe ,,Hide
+  Run, pssuspend -r GTA5_Enhanced.exe ,,Hide
   Sleep 1000
   SplashTextOff
   bringGameIntoFocus()
@@ -576,7 +576,7 @@ KillGame:
     IfMsgBox, Timeout
       Return
   }
-  Run, pskill gta5.exe ,,Hide
+  Run, pskill GTA5_Enhanced.exe ,,Hide
   return
 
 ; Toggle AFK (move left/right in a loop to not get kicked)
