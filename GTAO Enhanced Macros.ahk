@@ -501,7 +501,7 @@ bringGameIntoFocus(applyDelay = false) {
 ; === UPDATE ===
 ; ==============
 performUpdateCheck(silentSuccess = false) {
-  URLDownloadToFile,https://raw.githubusercontent.com/mannly01/gtav-online-ahk/refs/heads/master/GTAO%20Enhanced%20Macros.ahk,update.txt
+  URLDownloadToFile,https://raw.githubusercontent.com/mannly01/gtav-online-ahk/refs/heads/master/GTAO Enhanced Macros.ahk,update.txt
   if (errorlevel) {
     msgbox, 0, Error - GTAO Enhanced AHK-Macros, Received error response from GitHub and update check was canceled.`nPlease retry later or check manually.`n`nHint: Set DoCheckForUpdates to false to disable automatic checking!
     FileDelete, update.txt
