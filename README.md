@@ -35,8 +35,9 @@ You can copy them all but we only need pssuspend and pskill, so go ahead and ext
 * Needless to say, don't give inputs while a macro is running.
 * Sometimes you might find that the script doesn't appear to do anything. This might happen if you start the game after the AHK script. Reloading the script (Right-click on AHK systray icon -> Reload Script) fixes that usually.
 
-## Changelog (2.1.3/2.2.0)
+## Changelog (2.1.3/2.2.1)
 * Created a new `GTAO Enhanced Macros.ahk` for the 1.70 Enhanced version. The `GTA V Online Macros.ahk` file will still be available for the **Legacy** version.
+* Updated the Update function for the Enhanced macros version.
 
 ## Custom additions
 You can (optionally) create a file `custom.ahk` in the same location as the main script to add custom macros without needing to change the main file making updates easier.

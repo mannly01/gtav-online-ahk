@@ -671,7 +671,7 @@ ToggleCPH:
   bringGameIntoFocus()
   return
 
-; Toggle In Building mode (the Interation Menu chagnes when the player is in certain buildings)
+; Toggle In Building mode (the Interation Menu changes when the player is in certain buildings)
 ToggleInBuilding:
   IsInBuilding := !IsInBuilding
   if (IsInBuilding) {
