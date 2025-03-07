@@ -63,4 +63,4 @@ DoConfirmDisconnect  := true  ; If true the ForceDisconnect action will ask for 
 IntDisconnectDelay   := 10    ; Amount of seconds to freeze the process for, 10 works fine.
 DoToggleCPHWithVIP   := false ; If true ToggleVIP will become a 3-way toggle (off/on/CayoPericoHeistFinal).
 DisableCapsOnAction  := true  ; Disable caps lock before executing macros, some macros might fail if caps lock is on.
-DoCheckForUpdates    := true  ; Check for script updates on startup (you can manually bind this instead or additionally).
+DoCheckForUpdates    := false  ; Check for script updates on startup (you can manually bind this instead or additionally).

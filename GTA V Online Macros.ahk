@@ -1,4 +1,4 @@
-; v2.1.1
+; v2.1.3
 ; ^ don't remove or alter this line (autoupdate)
 #MaxThreadsPerHotkey 2
 
@@ -118,7 +118,7 @@ ArrayChatSnippets.push("You want some cool AHK macros? github.com/2called-chaos/
 ; Delays (you normally don't want to change these, you can try to play with these values if you have a slow/fast PC)
 IntFocusDelay        := 100  ; delay (in ms) after focussing game when AHK-GUI took focus.
 IntMenuDelay         := 120  ; delay (in ms) after opening interaction menu.
-IntPhoneMenuDelay    := 750 ; delay (in ms) after opening phone menu.
+IntPhoneMenuDelay    := 750  ; delay (in ms) after opening phone menu.
 IntPhoneMenuDelay2   := 250  ; delay (in ms) after selecting phone menu entries.
 IntPhoneScrollDelay  := 75   ; delay (in ms) between scrolls in the phone menu.
 IntKeySendDelay      := 25   ; delay (in ms) delay between send key commands.
@@ -618,12 +618,12 @@ ToggleRadar:
   SoundPlay, %A_WinDir%\Media\Windows Battery Critical.wav
   Send {%IGB_Pause%}
   ; Necessary delay to allow pause menu to open properly
-  Sleep, IntPhoneMenuDelay2
+  Sleep, IntPhoneMenuDelay
   ; Not using IGB_ variables on purpose as pause menu has static bindings
   Send {Right 5}
-  Sleep IntPhoneMenuDelay2 * 2
+  Sleep IntPhoneMenuDelay
   Send {Enter} ; Settings Menu
-  Sleep IntPhoneMenuDelay2
+  Sleep IntPhoneMenuDelay
   Send {Down 5}
   Sleep IntPhoneMenuDelay2
   Send {Enter}
@@ -923,15 +923,16 @@ RequestOppressor:
 
 ; Join a New Public Session
 NewPublicSession:
+  ; Open settings
   turnCapslockOff()
   SoundPlay, %A_WinDir%\Media\Windows Battery Critical.wav
   Send {%IGB_Pause%}
   ; Necessary delay to allow pause menu to open properly
-  Sleep, IntPhoneMenuDelay2
+  Sleep, IntPhoneMenuDelay
   Send {Right}
-  Sleep IntPhoneMenuDelay2 * 2
+  Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
-  Sleep IntPhoneMenuDelay2
+  Sleep IntPhoneMenuDelay2 * 2
   Send {Up 4}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
@@ -943,15 +944,16 @@ NewPublicSession:
 
 ; Join a New Invite Only Session
 NewInviteSession:
+  ; Open settings
   turnCapslockOff()
   SoundPlay, %A_WinDir%\Media\Windows Battery Critical.wav
   Send {%IGB_Pause%}
   ; Necessary delay to allow pause menu to open properly
-  Sleep, IntPhoneMenuDelay2
+  Sleep, IntPhoneMenuDelay
   Send {Right}
-  Sleep IntPhoneMenuDelay2 * 2
+  Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
-  Sleep IntPhoneMenuDelay2
+  Sleep IntPhoneMenuDelay2 * 2
   Send {Up 4}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
@@ -965,15 +967,16 @@ NewInviteSession:
 
 ; Join a New Crew Only Session
 NewCrewSession:
+  ; Open settings
   turnCapslockOff()
   SoundPlay, %A_WinDir%\Media\Windows Battery Critical.wav
   Send {%IGB_Pause%}
   ; Necessary delay to allow pause menu to open properly
-  Sleep, IntPhoneMenuDelay2
+  Sleep, IntPhoneMenuDelay
   Send {Right}
-  Sleep IntPhoneMenuDelay2 * 2
+  Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
-  Sleep IntPhoneMenuDelay2
+  Sleep IntPhoneMenuDelay2 * 2
   Send {Up 4}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
@@ -987,15 +990,16 @@ NewCrewSession:
 
 ; Join a New Friend Only Session
 NewFriendSession:
+  ; Open settings
   turnCapslockOff()
   SoundPlay, %A_WinDir%\Media\Windows Battery Critical.wav
   Send {%IGB_Pause%}
   ; Necessary delay to allow pause menu to open properly
-  Sleep, IntPhoneMenuDelay2
+  Sleep, IntPhoneMenuDelay
   Send {Right}
-  Sleep IntPhoneMenuDelay2 * 2
+  Sleep IntPhoneMenuDelay
   Send {Enter} ; Online Menu
-  Sleep IntPhoneMenuDelay2
+  Sleep IntPhoneMenuDelay2 * 2
   Send {Up 4}
   Sleep IntPhoneMenuDelay2
   Send {Enter} ; New Session Menu
